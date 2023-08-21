@@ -1,0 +1,189 @@
+* {
+	margin: 0;
+	user-select: none;
+}
+
+.block_1 {
+	margin-top: 5%;
+}
+
+.text {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.text_2 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.text_3 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.checkbox {
+	transform: scale(1.5);
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+.big_block_1 {
+	position: absolute;
+	width: 30%;
+	margin-top: 3%;
+}
+
+.big_block_2 {
+	position: absolute;
+	margin-left: 30%;
+	width: 30%;
+	margin-top: 3.3%;
+}
+
+.big_block_3 {
+	position: absolute;
+	margin-left: 60%;
+	width: 40%;
+	margin-top: 3%;
+}
+
+.text_block {
+	font-size: 25px;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.checkbox-label {
+  /* Оформление текста */
+  cursor: pointer;
+  padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  position: relative;
+  font-size: 30px;
+}
+
+.checkbox-label::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkbox-label_2 {
+	cursor: pointer;
+  	padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  	position: relative;
+  	font-size: 30px;
+}
+
+.checkbox_2 {
+	transform: scale(1.5);
+	margin-left: 2%;
+	margin-top: 1.5%;
+}
+
+.checkbox_2:hover {
+	cursor: pointer;
+}
+
+.checkbox-label_2::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+sup {
+	font-size: 0.6em;
+  	vertical-align: super;
+}
+
+.button_save {
+	width: 20%;
+	margin-left: 30%;
+	margin-top: 80%;
+	padding-top: 20px;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.text_button {
+	padding-top: 10px;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.big_block_4 {
+	position: absolute;
+	margin-left: 0%;
+	margin-top: 40%;
+}
+
+.text_4 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_5 {
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 40%;
+}
+
+.text_5 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_6 {
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 40%;
+	width: 30%;
+}
+
+.text_6 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.text_7 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_7 {
+	position: absolute;
+	margin-left: 29%;
+	margin-top: 52%;
+	width: 30%;
+}
+
+.big_block_8 {
+	position: absolute;
+	margin-left: 0%;
+	margin-top: 70%;
+	width: 30%;
+}
+
+.text_8 {
+	font-size: 30px;
+	padding-left: 3%;
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Main</title>
+	<link rel="stylesheet" href="static/main/CSS/style_buy_filter.css">
+</head>
+
+<body>
+    <style>
+        * {
+	margin: 0;
+	user-select: none;
+}
+
+.block_1 {
+	margin-top: 5%;
+}
+
+.text {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.text_2 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.text_3 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.checkbox {
+	transform: scale(1.5);
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+.big_block_1 {
+	position: absolute;
+	width: 30%;
+	margin-top: 3%;
+}
+
+.big_block_2 {
+	position: absolute;
+	margin-left: 30%;
+	width: 30%;
+	margin-top: 3.3%;
+}
+
+.big_block_3 {
+	position: absolute;
+	margin-left: 60%;
+	width: 40%;
+	margin-top: 3%;
+}
+
+.text_block {
+	font-size: 25px;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.checkbox-label {
+  /* Оформление текста */
+  cursor: pointer;
+  padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  position: relative;
+  font-size: 30px;
+}
+
+.checkbox-label::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkbox-label_2 {
+	cursor: pointer;
+  	padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  	position: relative;
+  	font-size: 30px;
+}
+
+.checkbox_2 {
+	transform: scale(1.5);
+	margin-left: 2%;
+	margin-top: 1.5%;
+}
+
+.checkbox_2:hover {
+	cursor: pointer;
+}
+
+.checkbox-label_2::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+sup {
+	font-size: 0.6em;
+  	vertical-align: super;
+}
+
+.button_save {
+	width: 20%;
+	margin-left: 30%;
+	margin-top: 80%;
+	padding-top: 20px;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.text_button {
+	padding-top: 10px;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.big_block_4 {
+	position: absolute;
+	margin-left: 0%;
+	margin-top: 40%;
+}
+
+.text_4 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_5 {
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 40%;
+}
+
+.text_5 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_6 {
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 40%;
+	width: 30%;
+}
+
+.text_6 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.text_7 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+
+.big_block_7 {
+	position: absolute;
+	margin-left: 29%;
+	margin-top: 52%;
+	width: 30%;
+}
+
+.big_block_8 {
+	position: absolute;
+	margin-left: 0%;
+	margin-top: 70%;
+	width: 30%;
+}
+
+.text_8 {
+	font-size: 30px;
+	padding-left: 3%;
+}
+    </style>
+	<div class="block_1">
+        <p class="text">Фильтры:</p>
+    </div>
+        <div class="big_block_1">
+            <h1 class="text_2">Пистолеты:</h1>
+            <div>
+		        <div class="text_block">
+		            <input id="myChexbox" class="checkbox" type="checkbox">
+		            <label for="myChexbox" class="checkbox_label">CZ75-Auto</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_2" class="checkbox" type="checkbox">
+		            <label for="myChexbox_2" class="checkbox_label">Desert Eagle</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_3" class="checkbox" type="checkbox">
+		            <label for="myChexbox_3" class="checkbox_label">Dual Berettas</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_4" class="checkbox" type="checkbox">
+		            <label for="myChexbox_4" class="checkbox_label">Five-SeveN</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_5" class="checkbox" type="checkbox">
+		            <label for="myChexbox_5" class="checkbox_label">Glock-18</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_6" class="checkbox" type="checkbox">
+					<label for="myChexbox_6" class="checkbox_label">P2000</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_7" class="checkbox" type="checkbox">
+					<label for="myChexbox_7" class="checkbox_label">P250</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_8" class="checkbox" type="checkbox">
+					<label for="myChexbox_8" class="checkbox_label">R8 Revolver</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_9" class="checkbox" type="checkbox">
+					<label for="myChexbox_9" class="checkbox_label">Tec-9</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_10" class="checkbox" type="checkbox">
+					<label for="myChexbox_10" class="checkbox_label">USP-S</label>
+				</div>
+    		</div>
+    	</div>
+
+    	<div class="big_block_2">
+    		<h1 class="text_2">Винтовки:</h1>
+    		<div>
+    			<div class="text_block">
+                <input id="myChexbox_11" class="checkbox" type="checkbox">
+                <label for="myChexbox_11" class="checkbox_label">AK-47</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_12" class="checkbox" type="checkbox">
+                <label for="myChexbox_12" class="checkbox_label">AUG</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_13" class="checkbox" type="checkbox">
+                <label for="myChexbox_13" class="checkbox_label">FAMAS</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_14" class="checkbox" type="checkbox">
+                <label for="myChexbox_14" class="checkbox_label">Galil AR</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_15" class="checkbox" type="checkbox">
+                <label for="myChexbox_15" class="checkbox_label">M4A1-S</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_16" class="checkbox" type="checkbox">
+                <label for="myChexbox_16" class="checkbox_label">M4A4</label>
+            </div>
+            <div class="text_block">
+                <input id="myChexbox_17" class="checkbox" type="checkbox">
+                <label for="myChexbox_17" class="checkbox_label">SG 553</label>
+            </div>
+    	</div>
+    </div>
+   	<div class="big_block_3">
+   		<h1 class="text_3">Снайперские винтовки:</h1>
+	   	<div class="text_block">
+	   		<input id="myChexbox_18" class="checkbox" type="checkbox">
+	   		<label for="myChexbox_18" class="checkbox_label">AWP</label>
+	   	</div>
+	   	<div class="text_block">
+	   		<input id="myChexbox_19" class="checkbox" type="checkbox">
+	   		<label for="myChexbox_19" class="checkbox_label">G3SG1</label>
+	   	</div>
+	   	<div class="text_block">
+	   		<input id="myChexbox_20" class="checkbox" type="checkbox">
+	   		<label for="myChexbox_20" class="checkbox_label">SCAR-20</label>
+	   	</div>
+	   	<div class="text_block">
+	   		<input id="myChexbox_21" class="checkbox" type="checkbox">
+	   		<label for="myChexbox_21" class="checkbox_label">SSG 08</label>
+	   	</div>
+	</div>
+	<div class="big_block_4">
+		<h1 class="text_4">Пистолето-пулемёты:</h1>
+		<div class="text_block">
+			<input id="myChexbox_22" class="checkbox" type="checkbox">
+			<label for="myChexbox_22" class="checkbox_label">MAC-10</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_23" class="checkbox" type="checkbox">
+			<label for="myChexbox_23" class="checkbox_label">MP5-SD</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_24" class="checkbox" type="checkbox">
+			<label for="myChexbox_24" class="checkbox_label">MP7</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_25" class="checkbox" type="checkbox">
+			<label for="myChexbox_25" class="checkbox_label">MP9</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_26" class="checkbox" type="checkbox">
+			<label for="myChexbox_26" class="checkbox_label">P90</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_27" class="checkbox" type="checkbox">
+			<label for="myChexbox_27" class="checkbox_label">PP-Bizon</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_28" class="checkbox" type="checkbox">
+			<label for="myChexbox_28" class="checkbox_label">UMP-45</label>
+		</div>
+	</div>
+	<div class="big_block_5">
+		<h1 class="text_5">Пулемёты:</h1>
+		<div class="text_block">
+			<input id="myChexbox_29" class="checkbox" type="checkbox">
+			<label for="myChexbox_29" class="checkbox_label">M249</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_30" class="checkbox" type="checkbox">
+			<label for="myChexbox_30" class="checkbox_label">Negev</label>
+		</div>
+	</div>
+	<div class="big_block_6">
+		<h1 class="text_6">Ножи:</h1>
+		<div class="text_block">
+			<input id="myChexbox_31" class="checkbox" type="checkbox">
+			<label for="myChexbox_31" class="checkbox_label">Bayonet</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_32" class="checkbox" type="checkbox">
+			<label for="myChexbox_32" class="checkbox_label">Bowie Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_33" class="checkbox" type="checkbox">
+			<label for="myChexbox_33" class="checkbox_label">Butterfly Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_34" class="checkbox" type="checkbox">
+			<label for="myChexbox_34" class="checkbox_label">Classic Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_35" class="checkbox" type="checkbox">
+			<label for="myChexbox_35" class="checkbox_label">Falchion Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_36" class="checkbox" type="checkbox">
+			<label for="myChexbox_36" class="checkbox_label">Flip Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_37" class="checkbox" type="checkbox">
+			<label for="myChexbox_37" class="checkbox_label">Gut Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_38" class="checkbox" type="checkbox">
+			<label for="myChexbox_38" class="checkbox_label">Huntsman Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_39" class="checkbox" type="checkbox">
+			<label for="myChexbox_39" class="checkbox_label">Karambit</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_40" class="checkbox" type="checkbox">
+			<label for="myChexbox_40" class="checkbox_label">M9 Bayonet</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_41" class="checkbox" type="checkbox">
+			<label for="myChexbox_41" class="checkbox_label">Navaja Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_42" class="checkbox" type="checkbox">
+			<label for="myChexbox_42" class="checkbox_label">Nomad Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_43" class="checkbox" type="checkbox">
+			<label for="myChexbox_43" class="checkbox_label">Paracord Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_44" class="checkbox" type="checkbox">
+			<label for="myChexbox_44" class="checkbox_label">Shadow Daggers</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_45" class="checkbox" type="checkbox">
+			<label for="myChexbox_45" class="checkbox_label">Skeleton Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_46" class="checkbox" type="checkbox">
+			<label for="myChexbox_46" class="checkbox_label">Stiletto Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_47" class="checkbox" type="checkbox">
+			<label for="myChexbox_47" class="checkbox_label">Survival Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_48" class="checkbox" type="checkbox">
+			<label for="myChexbox_48" class="checkbox_label">Talon Knife</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_49" class="checkbox" type="checkbox">
+			<label for="myChexbox_49" class="checkbox_label">Ursus Knife</label>
+		</div>
+	</div>
+	<div class="big_block_7">
+		<h1 class="text_7">Дробовики:</h1>
+		<div class="text_block">
+			<input id="myChexbox_50" class="checkbox" type="checkbox">
+			<label for="myChexbox_50" class="checkbox_label">MAG-7</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_51" class="checkbox" type="checkbox">
+			<label for="myChexbox_51" class="checkbox_label">Nova</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_52" class="checkbox" type="checkbox">
+			<label for="myChexbox_52" class="checkbox_label">Sawed-Off</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_53" class="checkbox" type="checkbox">
+			<label for="myChexbox_53" class="checkbox_label">XM1014</label>
+		</div>
+	</div>
+	<div class="big_block_8">
+		<h1 class="text_8">Другое:</h1>
+		<div class="text_block">
+			<input id="myChexbox_54" class="checkbox" type="checkbox">
+			<label for="myChexbox_54" class="checkbox_label">Перчатки</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_55" class="checkbox" type="checkbox">
+			<label for="myChexbox_55" class="checkbox_label">Контейнеры</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_56" class="checkbox" type="checkbox">
+			<label for="myChexbox_56" class="checkbox_label">Наклейки</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_57" class="checkbox" type="checkbox">
+			<label for="myChexbox_57" class="checkbox_label">Ключи</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_58" class="checkbox" type="checkbox">
+			<label for="myChexbox_58" class="checkbox_label">Агенты</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_59" class="checkbox" type="checkbox">
+			<label for="myChexbox_59" class="checkbox_label">Нашивки</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_60" class="checkbox" type="checkbox">
+			<label for="myChexbox_60" class="checkbox_label">Граффити</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_61" class="checkbox" type="checkbox">
+			<label for="myChexbox_61" class="checkbox_label">Наборы музыки</label>
+		</div>
+		<div class="text_block">
+			<input id="myChexbox_62" class="checkbox" type="checkbox">
+			<label for="myChexbox_62" class="checkbox_label">Пропуск</label>
+		</div>
+	</div>
+	</div>
+    	<button class="button_save">
+    		<a href="" class="text_button"><span class="text_button">Сохранить</span></a>
+   		</button>
+   	</div>
+</body>
+</html>

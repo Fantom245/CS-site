@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Buy</title>
+	<link rel="stylesheet" type="text/css" href="static\main\CSS\buy_pro.css">
+</head>
+<body>
+	<style>
+		* {
+	margin: 0;
+	user-select: none;
+}
+
+.block_1 {
+	margin-top: 5%;
+}
+
+.text {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.text_2 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.text_3 {
+	font-size: 30px;
+	margin-left: 2%;
+	margin-top: 35%;
+}
+
+.checkbox {
+	transform: scale(1.5);
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+.big_block_1 {
+	position: absolute;
+	width: 50%;
+	margin-top: 3%;
+
+}
+
+.big_block_2 {
+	position: absolute;
+	margin-left: 50%;
+	width: 50%;
+	margin-top: 3%;
+}
+
+.text_block {
+	font-size: 25px;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.checkbox-label {
+  /* Оформление текста */
+  cursor: pointer;
+  padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  position: relative;
+  font-size: 30px;
+}
+
+.checkbox-label::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkbox-label_2 {
+	cursor: pointer;
+  	padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  	position: relative;
+  	font-size: 30px;
+}
+
+.checkbox_2 {
+	transform: scale(1.5);
+	margin-left: 2%;
+	margin-top: 1.5%;
+}
+
+.checkbox_2:hover {
+	cursor: pointer;
+}
+
+.checkbox-label_2::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+sup {
+	font-size: 0.6em;
+  	vertical-align: super;
+}
+
+.button_save {
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 30px;
+	padding-top: 20px;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.text_button {
+	padding-top: 10px;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+	</style>
+	<div class="block_1">
+        <p class="text">Фильтры:</p>
+    </div>
+	<div>
+        <div class="big_block_1">
+            <h1 class="text_2">Качество:</h1>
+            <div>
+		        <div class="text_block">
+		            <input id="myChexbox" class="checkbox" type="checkbox">
+		            <label for="myChexbox" class="checkbox_label">Прямо с завода</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_2" class="checkbox" type="checkbox">
+		            <label for="myChexbox_2" class="checkbox_label">Немного поношеное</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_3" class="checkbox" type="checkbox">
+		            <label for="myChexbox_3" class="checkbox_label">После полевых испытаний</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_4" class="checkbox" type="checkbox">
+		            <label for="myChexbox_4" class="checkbox_label">Поношеное</label>
+		        </div>
+		        <div class="text_block">
+		            <input id="myChexbox_5" class="checkbox" type="checkbox">
+		            <label for="myChexbox_5" class="checkbox_label">Закалённое в боях</label>
+				</div>
+    		</div>
+    	</div>
+		<div class="b2">
+			<div class="big_block_2">
+				<h1 class="text_2">Раритетность:</h1>
+				<div>
+					<div class="text_block">
+					<input id="myChexbox_6" class="checkbox" type="checkbox">
+					<label for="myChexbox_6" class="checkbox_label">Ширпотреб</label>
+					</div>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_7" class="checkbox" type="checkbox">
+					<label for="myChexbox_7" class="checkbox_label">Промышленое качество</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_8" class="checkbox" type="checkbox">
+					<label for="myChexbox_8" class="checkbox_label">Армейское качество</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_9" class="checkbox" type="checkbox">
+					<label for="myChexbox_9" class="checkbox_label">Запрещённое</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_10" class="checkbox" type="checkbox">
+					<label for="myChexbox_10" class="checkbox_label">Засекреченное</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_11" class="checkbox" type="checkbox">
+					<label for="myChexbox_11" class="checkbox_label">Тайное</label>
+				</div>
+				<div class="text_block">
+					<input id="myChexbox_12" class="checkbox" type="checkbox">
+					<label for="myChexbox_12" class="checkbox_label">Контробандное</label>
+				</div>
+				</div>
+			</div>
+		</div>
+
+    	<div class="big_block_3">
+    		<h1 class="text_3">Категория:</h1>
+    		<div>
+    			<div class="text_block">
+    			<input id="myChexbox_13" class="checkbox_2" type="checkbox">
+    			<label for="myChexbox_13" class="checkbox_label_2">Обычный</label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="text_block">
+    			<input id="myChexbox_14" class="checkbox_2" type="checkbox" >
+    			<label for="myChexbox_14" class="checkbox_label_2">StatTrack<sup>TM</sup></label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="text_block">
+    			<input id="myChexbox_15" class="checkbox_2" type="checkbox">
+    			<label for="myChexbox_15" class="checkbox_label_2">Сувенир</label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="text_block">
+    			<input id="myChexbox_16" class="checkbox_2" type="checkbox">
+    			<label for="myChexbox_16" class="checkbox_label_2">Стикеры на скине</label>
+				</div>
+    		</div>
+    		<div>
+    			<div class="text_block">
+    			<input id="myChexbox_17" class="checkbox_2" type="checkbox">
+    			<label for="myChexbox_17" class="checkbox_label_2">&#9733;</label>
+				</div>
+    		</div>
+    	</div>
+    	<div>
+    		<button class="button_save">
+    			<a href="http://127.0.0.1:8000/buy/filter" class="text_button"><span class="text_button">Сохранить</span></a>
+    		</button>
+    	</div>
+</body>
+</html>

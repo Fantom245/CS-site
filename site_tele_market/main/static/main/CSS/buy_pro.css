@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	user-select: none;
+}
+
+.block_1 {
+	margin-top: 5%;
+}
+
+.text {
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.text_2 {
+	font-size: 30px;
+	margin-left: 3%;
+	margin-top: 2%;
+}
+
+.text_3 {
+	font-size: 30px;
+	margin-left: 2%;
+	margin-top: 35%;
+}
+
+.checkbox {
+	transform: scale(1.5);
+	margin-left: 3%;
+	margin-top: 3%;
+}
+
+.big_block_1 {
+	position: absolute;
+	width: 50%;
+	margin-top: 3%;
+
+}
+
+.big_block_2 {
+	position: absolute;
+	margin-left: 50%;
+	width: 50%;
+	margin-top: 3%;
+}
+
+.text_block {
+	font-size: 25px;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.checkbox-label {
+  /* Оформление текста */
+  cursor: pointer;
+  padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  position: relative;
+  font-size: 30px;
+}
+
+.checkbox-label::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.checkbox-label_2 {
+	cursor: pointer;
+  	padding-left: 30px; /* Добавим отступ слева, чтобы было место для визуальной замены флажка */
+  	position: relative;
+  	font-size: 30px;
+}
+
+.checkbox_2 {
+	transform: scale(1.5);
+	margin-left: 2%;
+	margin-top: 1.5%;
+}
+
+.checkbox_2:hover {
+	cursor: pointer;
+}
+
+.checkbox-label_2::before {
+	content: '';
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+sup {
+	font-size: 0.6em;
+  	vertical-align: super;
+}
+
+.button_save {
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 30px;
+	padding-top: 20px;
+	font-size: 30px;
+	padding-bottom: 20px;
+	color: white;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.text_button {
+	padding-top: 10px;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
